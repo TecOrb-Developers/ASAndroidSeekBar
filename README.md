@@ -7,13 +7,15 @@ select texts to top of seek bar
 
 ```gradle
 
+ implementation 'com.github.TecOrb-Developers:ASAndroidSeekBar:1.0'
+```
+```
 allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
+   repositories {
+	...
+	maven { url 'https://jitpack.io' }
 		}
 	}
- implementation 'com.github.TecOrb-Developers:ASAndroidSeekBar:1.0'
 ```
 
 ## Usage
