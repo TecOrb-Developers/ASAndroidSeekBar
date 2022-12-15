@@ -1,13 +1,12 @@
-# IndicatorSeekBar
+# Displaying SeekBar
 
-This is a customizable SeekBar library on Android. Also, If you don't need indicator and want to show tick texts to top of seek bar, please see [the other library](https://github.com/warkiz/TickSeekBar).
+This is a customizable SeekBar library on Android. Also, If you don't need display and want to show select texts to top of seek bar
 
 ## Setup
 
 ```gradle
-implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
-```
 
+```
 ## Usage
 #### xml
 
@@ -54,10 +53,9 @@ implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
             .tickTextsColor(getResources().getColor(R.color.color_pink))
             .tickTextsSize(13)//sp
             .tickTextsTypeFace(Typeface.MONOSPACE)
-            .showIndicatorType(IndicatorType.ROUNDED_RECTANGLE)  
+            .showIndicatorType(SeekBarIndicatorType.ROUNDED_RECTANGLE)
             .indicatorColor(resources.getColor(R.color.black, null))
             .indicatorTextColor(resources.getColor(R.color.white,null))
-            .showIndicatorType(IndicatorType.CIRCULAR_BUBBLE)
             .thumbColorStateList(resources.getColorStateList(R.color.selector_thumb_color, null))
             .thumbSize(14)
             .trackProgressColor(resources.getColor(R.color.color_blue, null))
@@ -69,12 +67,12 @@ implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
             .trackBackgroundSize(2)
             .onlyThumbDraggable(false)
             .build()
+     continuous.onSeekChangeListener = object : OnSeekBarChangeListener {
+         override fun onSeeking(seekParams: SeekBarProperty?) {}
+         override fun onStartTrackingTouch(seekBar: DisplayingSeekBar?) {}
+         override fun onStopTrackingTouch(seekBar: DisplayingSeekBar?) {}
 
-        continuous.onSeekChangeListener = object : OnSeekChangeListener {
-            override fun onSeeking(seekParams: SeekParams) {}
-            override fun onStartTrackingTouch(seekBar: IndicatorSeekBar) {}
-            override fun onStopTrackingTouch(seekBar: IndicatorSeekBar) {}
-        }
+     }
         content.addView(continuous)
 
 
@@ -82,10 +80,10 @@ implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
                 
 
 ```
-## Indicator stay always
+## Display Layout always
 
-Put IndicatorSeekBar into a IndicatorStayLayout can make the indicator stayed always.
-By the way, make sure you had called the attr to show the indicator before.
+Put DisplayingSeekBar into a DisplayLayout can make the display layout always.
+By the way, make sure you had called the attr to show the dispaly value before.
 
 #### Xml
 
@@ -107,7 +105,7 @@ By the way, make sure you had called the attr to show the indicator before.
     <!--show indicator can not be NONE-->
     ....../>
     <!--your layout-->
-  
+
 </com.seekbardetail.DisplayLayout>
 
 ```
