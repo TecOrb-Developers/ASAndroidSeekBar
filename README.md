@@ -5,6 +5,13 @@ This is a customizable SeekBar library on Android. Also, If you don't need displ
 ## Setup
 
 ```gradle
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
  implementation 'com.github.TecOrb-Developers:ASAndroidSeekBar:1.0'
 ```
 ## Usage
