@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title_text_styling"
+            android:text="@string/build_by_java_code" />
+
+
+        <TextView
+            style="@style/subtitle_text_styling"
+            android:text="@string/progress_value_in_float" />
+
+        <com.seekbardetail.DisplayingSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_progress="46.9"
+            app:isb_progress_value_float="true"
+            app:isb_show_indicator="none"
+            app:isb_show_thumb_text="true" />
+
+        <TextView
+            style="@style/subtitle_text_styling"
+            android:text="@string/show_progress_in_percentage" />
+
+        <com.seekbardetail.DisplayLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.seekbardetail.DisplayingSeekBar
+            android:id="@+id/percent_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_indicator_color="@color/color_blue"
+            app:isb_progress="30"
+            app:isb_show_indicator="rectangle"
+            app:isb_show_tick_texts="true"
+            app:isb_tick_texts_color="@color/color_gray"
+            app:isb_ticks_count="2" />
+        </com.seekbardetail.DisplayLayout>
+
+        <TextView
+            style="@style/subtitle_text_styling"
+            android:text="@string/custom_the_size_color_for_track_thumb_etc" />
+
+        <com.seekbardetail.DisplayingSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_indicator_color="@color/color_gray"
+            app:isb_indicator_text_color="@color/colorAccent"
+            app:isb_indicator_text_size="18sp"
+            app:isb_progress="30"
+            app:isb_show_indicator="circular_bubble"
+            app:isb_show_tick_texts="true"
+            app:isb_thumb_color="@color/color_green"
+            app:isb_thumb_size="20dp"
+            app:isb_tick_texts_color="@color/color_blue"
+            app:isb_tick_texts_size="15sp"
+            app:isb_ticks_count="2"
+            app:isb_track_background_color="@color/color_gray"
+            app:isb_track_background_size="2dp"
+            app:isb_track_progress_color="@color/color_blue"
+            app:isb_track_progress_size="4dp" />
+        <TextView
+            style="@style/subtitle_text_styling"
+            android:text="@string/custom_indicator_text_by_java_code" />
+
+        <com.seekbardetail.DisplayingSeekBar
+            android:id="@+id/custom_indicator_by_java"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_progress="50"
+            app:isb_show_indicator="rectangle"
+            app:isb_show_tick_marks_type="divider"
+            app:isb_show_tick_texts="true"
+            app:isb_tick_texts_array="@array/tick_below_text_length_5"
+            app:isb_ticks_count="7" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Seekbar</string>
+    <string name="build_by_java_code">Customize Seek Bar Examples</string>
+    <string name="progress_value_in_float">Progress value in float</string>
+    <string name="show_progress_in_percentage">Show progress in percentage</string>
+    <string name="custom_the_size_color_for_track_thumb_etc">Custom the size/color for track/thumb etc</string>
+    <string name="custom_indicator_text_by_java_code">Custom indicator text by java code</string>
+    <string name="txt_seekbar_view">Seekbar View</string>
+    <string name="thumb_chnages_txt">Thumb change when its not pressed </string>
+    <string name="custom_ripple_txt">Custom Ripple when Thumb is pressed </string>
+</resources>

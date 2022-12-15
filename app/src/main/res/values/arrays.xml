@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tick_below_text_length_5">
+        <item>sun</item>
+        <item>mon</item>
+        <item>tues</item>
+        <item>wed</item>
+        <item>thur</item>
+        <item>fri</item>
+        <item>sat</item>
+    </array>
+
+</resources>
