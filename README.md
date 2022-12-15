@@ -5,7 +5,7 @@ This is a customizable SeekBar library on Android. Also, If you don't need displ
 ## Setup
 
 ```gradle
-
+ implementation 'com.github.TecOrb-Developers:ASAndroidSeekBar:1.0'
 ```
 ## Usage
 #### xml
